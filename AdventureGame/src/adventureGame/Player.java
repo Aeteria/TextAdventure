@@ -12,9 +12,21 @@ public class Player {
 		
 	}
 	
+	public void setCurrentHealth(int hp){
+		
+		health = hp;
+		
+	}
+	
 	public int maxMagicka(){
 		
 		return 50 + level*10;
+		
+	}
+	
+	public void setCurrentMagicka(int mp){
+		
+		magicka = mp;
 		
 	}
 	

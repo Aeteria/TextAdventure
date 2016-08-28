@@ -10,59 +10,69 @@ public class Potions {
 	
 	}
 	
-	public int smallHealthPotion(Player player){
+	public void smallHealthPotion(Player player){
 		
 		if (player.health >= player.maxHealth() - 20){
 			
-			return player.health = player.maxHealth();
+			 player.setCurrentHealth(player.maxHealth());
+			 System.out.print("You are at max Health");
 		}
 		else	
-			return player.health + 20;
+			player.setCurrentHealth(player.health + 20);
+			System.out.print("You are at " + player.health + " Health");
 			
 	}
 	
-	public int largeHealthPotion(Player player){
+	public void largeHealthPotion(Player player){
 			
 		if (player.health >= player.maxHealth() - 50){
 			
-			return player.health = player.maxHealth();
+			player.setCurrentHealth(player.maxHealth());
+			System.out.print("You are at max Health");
 		}
 		else
-			return player.health + 50;	
+			player.setCurrentHealth(player.health + 50);	
+			System.out.print("You are at " + player.health + " Health");
 		
 	}
 	
-	public int ultimateHealthPotion(Player player){
+	public void ultimateHealthPotion(Player player){
 		
-		return player.health = player.maxHealth(); 
+		player.setCurrentHealth(player.maxHealth()); 
+		System.out.print("You are at max Health");
 		
 	}
 	
-	public int smallMagickaPotion(Player player){
+	public void smallMagickaPotion(Player player){
 		
 		if (player.magicka >= player.maxHealth()-20){
 			
-			return player.magicka = player.maxMagicka();
+			player.setCurrentMagicka(player.maxMagicka());
+			System.out.print("You are at max Magicka");
 		}
 		else 
-		   return player.magicka + 20; 
+			player.setCurrentMagicka(player.magicka + 20); 
+			System.out.print("You are at " + player.magicka + " Magicka");
 		
 	}
 	
-	public int largeMagickaPotion(Player player){
+	public void largeMagickaPotion(Player player){
 		
 		if (player.magicka >= player.maxHealth()-50){
 			
-			return player.magicka = player.maxMagicka();
+			player.setCurrentMagicka(player.maxMagicka());
+			System.out.print("You are at max Magicka");
 		}
 		else 
-		   return player.magicka + 50; 
+			player.setCurrentMagicka(player.magicka + 50); 
+			System.out.print("You are at " + player.magicka + " Magicka");
 		
 	}
 	
-public int ultimateMagickaPotion(Player player){
+	public void ultimateMagickaPotion(Player player){
 				
-		   return player.magicka = player.maxMagicka(); 
+		player.setCurrentMagicka(player.maxMagicka()); 
+		System.out.print("You are at max Magicka");
 		
 	}
 
