@@ -1,16 +1,25 @@
 package adventureGame;
 
 public class Player {
-	public int level = 1;
-	public int health = 50;
-	public int magicka = 50;
+	public int level;
+	public int health;
+	public int maxHealth;
+	public int magicka;
+	public int strength;
+	public int gold; 
+
 	
-	
-	public int maxHealth(){
-	
-		return 50 + level*10;
 		
-	}
+public Player(){
+	level = 1;
+	health = 50;
+	maxHealth = 50 + level*10;
+	magicka = 50;
+	strength = 10*level;
+	gold = 0; 
+}
+
+
 	
 	public void setCurrentHealth(int hp){
 		

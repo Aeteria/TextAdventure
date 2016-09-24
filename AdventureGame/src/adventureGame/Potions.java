@@ -12,9 +12,9 @@ public class Potions {
 	
 	public void smallHealthPotion(Player player){
 		
-		if (player.health >= player.maxHealth() - 20){
+		if (player.health >= player.maxHealth - 20){
 			
-			 player.setCurrentHealth(player.maxHealth());
+			 player.setCurrentHealth(player.maxHealth);
 			 System.out.print("You are at max Health");
 		}
 		else	
@@ -25,9 +25,9 @@ public class Potions {
 	
 	public void largeHealthPotion(Player player){
 			
-		if (player.health >= player.maxHealth() - 50){
+		if (player.health >= player.maxHealth - 50){
 			
-			player.setCurrentHealth(player.maxHealth());
+			player.setCurrentHealth(player.maxHealth);
 			System.out.print("You are at max Health");
 		}
 		else
@@ -38,14 +38,14 @@ public class Potions {
 	
 	public void ultimateHealthPotion(Player player){
 		
-		player.setCurrentHealth(player.maxHealth()); 
+		player.setCurrentHealth(player.maxHealth); 
 		System.out.print("You are at max Health");
 		
 	}
 	
 	public void smallMagickaPotion(Player player){
 		
-		if (player.magicka >= player.maxHealth()-20){
+		if (player.magicka >= player.maxHealth-20){
 			
 			player.setCurrentMagicka(player.maxMagicka());
 			System.out.print("You are at max Magicka");
@@ -58,7 +58,7 @@ public class Potions {
 	
 	public void largeMagickaPotion(Player player){
 		
-		if (player.magicka >= player.maxHealth()-50){
+		if (player.magicka >= player.maxHealth-50){
 			
 			player.setCurrentMagicka(player.maxMagicka());
 			System.out.print("You are at max Magicka");
@@ -74,6 +74,11 @@ public class Potions {
 		player.setCurrentMagicka(player.maxMagicka()); 
 		System.out.print("You are at max Magicka");
 		
+	}
+	
+	public void strengthPotion(Player player){
+		
+		player.strength = player.strength + 2; 
 	}
 
 }
